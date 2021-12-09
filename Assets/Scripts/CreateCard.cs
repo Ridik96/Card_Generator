@@ -12,10 +12,11 @@ public class CreateCard : MonoBehaviour
     [SerializeField] private Image potion;
 
     public RawCard cardData;
-
+    public CardEffect posion;
     private void Start()
     {
         OnCreateCard();
+
     }
     private void OnCreateCard()
     {
