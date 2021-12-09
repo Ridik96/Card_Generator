@@ -411,6 +411,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1811584427}
     m_Modifications:
+    - target: {fileID: 1314170940223233109, guid: a634203bbb5e6a945a5913d27ef5b190,
+        type: 3}
+      propertyPath: m_Name
+      value: Effect
+      objectReference: {fileID: 0}
     - target: {fileID: 3673184263418346598, guid: a634203bbb5e6a945a5913d27ef5b190,
         type: 3}
       propertyPath: m_Name
@@ -426,6 +431,17 @@ PrefabInstance:
       propertyPath: title
       value: 
       objectReference: {fileID: 766487849}
+    - target: {fileID: 6276627069460548095, guid: a634203bbb5e6a945a5913d27ef5b190,
+        type: 3}
+      propertyPath: button
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6276627069460548095, guid: a634203bbb5e6a945a5913d27ef5b190,
+        type: 3}
+      propertyPath: posion
+      value: 
+      objectReference: {fileID: 11400000, guid: 601c207022ea04e469c9b4a456445b05,
+        type: 2}
     - target: {fileID: 6276627069460548095, guid: a634203bbb5e6a945a5913d27ef5b190,
         type: 3}
       propertyPath: potion
