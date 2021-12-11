@@ -12,5 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b256e26f4e3bb14086f8e7848d19ce2, type: 3}
   m_Name: Posion Effect
   m_EditorClassIdentifier: 
-  hPslider: {fileID: 0}
-  time: 0
+  actionTime: 5
+  actionResult: 0.1
+  effectDiscription: 
+  numberOfBar: 1
+  colorBar: {r: 1, g: 0, b: 0, a: 1}
+  nameBar:
+  - HealtBar
+  up: 0

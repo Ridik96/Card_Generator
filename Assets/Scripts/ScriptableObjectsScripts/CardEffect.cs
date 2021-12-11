@@ -9,5 +9,8 @@ public class CardEffect : ScriptableObject
     public float actionTime;
     public float actionResult;
     public string effectDiscription;
+    public List<string> nameBar;
+    public bool up;
 
+    
 }
