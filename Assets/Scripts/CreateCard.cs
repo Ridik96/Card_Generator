@@ -12,22 +12,11 @@ public class CreateCard : MonoBehaviour
 
    [SerializeField] private Image potion;
 
-<<<<<<< Updated upstream:Assets/Scripts/ScriptableObjectsScripts/CreateCard.cs
-    public RawCard cardData;
-    public CardEffect posion;
-    private void Start()
-    {
-        OnCreateCard();
-
-    }
-    private void OnCreateCard()
-=======
     public ScriptableObject currentEffect;
 
   
     public void OnCreateCard(RawCard cardData)
->>>>>>> Stashed changes:Assets/Scripts/CreateCard.cs
-    {
+    { 
         int firstNumber;
         int secondNumber;
         int thirdNumber;
