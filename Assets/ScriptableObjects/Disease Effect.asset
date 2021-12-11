@@ -10,8 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b256e26f4e3bb14086f8e7848d19ce2, type: 3}
-  m_Name: Card Effect
+  m_Name: Disease Effect
   m_EditorClassIdentifier: 
-  actionTime: 0
-  actionResult: 0
+  actionTime: 10
+  actionResult: 0.5
   effectDiscription: 
+  numberOfBar: 0
+  colorBar: {r: 0, g: 0, b: 0, a: 0}
+  nameBar:
+  - StaminaBar
+  up: 0
