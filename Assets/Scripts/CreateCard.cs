@@ -12,6 +12,7 @@ public class CreateCard : MonoBehaviour
 
    [SerializeField] private Image potion;
 
+<<<<<<< Updated upstream:Assets/Scripts/ScriptableObjectsScripts/CreateCard.cs
     public RawCard cardData;
     public CardEffect posion;
     private void Start()
@@ -20,6 +21,12 @@ public class CreateCard : MonoBehaviour
 
     }
     private void OnCreateCard()
+=======
+    public ScriptableObject currentEffect;
+
+  
+    public void OnCreateCard(RawCard cardData)
+>>>>>>> Stashed changes:Assets/Scripts/CreateCard.cs
     {
         int firstNumber;
         int secondNumber;
@@ -35,7 +42,8 @@ public class CreateCard : MonoBehaviour
         title.text = cardData.TitleList[firstNumber];
         discripton.text = cardData.DiscriptionList[secondNumber];
         potion.sprite = cardData.ImageList[thirdNumber];
-        //effect.text =cardData.EffectList[effectNumber].ToString
+        currentEffect = cardData.EffectList[effectNumber];
+        
     }
 
 }
