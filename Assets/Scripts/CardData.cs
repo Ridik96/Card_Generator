@@ -5,6 +5,7 @@ public class CardData
 {
     public  string titleText;
     public string discriptionText;
+    public string effectText;
 
     public  Sprite image;
 
@@ -18,6 +19,7 @@ public class CardData
     {
         titleText = card.TitleList[card.TitleList.Count-1];
         discriptionText = card.DiscriptionList[card.DiscriptionList.Count - 1];
+        effectText = effect.name;
         image = card.ImageList[card.ImageList.Count - 1];
         actionTime = effect.actionTime;
         actionResult = effect.actionResult;

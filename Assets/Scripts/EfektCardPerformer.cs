@@ -5,11 +5,10 @@ using UnityEngine.UI;
 
 public class EfektCardPerformer : MonoBehaviour
 {
-    
-    public List<Slider> statBars = new List<Slider>();
-
    [SerializeField] private List<string> statBarsTag = new List<string>();
-    private float timeCounter;
+    private float timeCounter; 
+
+    public List<Slider> statBars = new List<Slider>();
 
     void Start()
     {
@@ -19,7 +18,7 @@ public class EfektCardPerformer : MonoBehaviour
            
             statBarsTag[i] = statBars[i].tag;
         }
-        
+
     }
 
     public void OnEffectStart(CardEffect effect)
@@ -28,7 +27,7 @@ public class EfektCardPerformer : MonoBehaviour
         {
             StartCoroutine(BarChange(effect.up, effect.nameBar[j], effect.actionResult, effect.actionTime));
         }
-        
+
     }
     private IEnumerator BarChange(bool grows, string bartag, float actionResult,float time)
     {
@@ -44,14 +43,13 @@ public class EfektCardPerformer : MonoBehaviour
             {
                 break;
             }
-          
            
         while (timeCounter < time)
         {
             timeCounter += Time.deltaTime;
             if(grows)
              {
-                 statBars[curentBar].value += actionResult/time;
+                statBars[curentBar].value += actionResult / time;
              }
             else
              {

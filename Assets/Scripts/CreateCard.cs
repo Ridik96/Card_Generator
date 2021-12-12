@@ -10,10 +10,10 @@ public class CreateCard : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI discripton;
     [SerializeField] private TMPro.TextMeshProUGUI effect;
 
-   [SerializeField] private Image potion;
+    [SerializeField] private Image potion;
 
+    [HideInInspector] public ScriptableObject currentEffect;
     public RawCard currentCard;
-   [HideInInspector] public ScriptableObject currentEffect;
 
     public void Initialize()
     {
@@ -30,13 +30,14 @@ public class CreateCard : MonoBehaviour
         firstNumber = Random.Range(0, cardData.TitleList.Count);
         secondNumber = Random.Range(0, cardData.DiscriptionList.Count);
         thirdNumber = Random.Range(0, cardData.ImageList.Count);
-        effectNumber = Random.Range(0, cardData.DiscriptionList.Count);
+        effectNumber = Random.Range(0, cardData.EffectList.Count);
 
 
         title.text = cardData.TitleList[firstNumber];
         discripton.text = cardData.DiscriptionList[secondNumber];
         potion.sprite = cardData.ImageList[thirdNumber];
         currentEffect = cardData.EffectList[effectNumber];
+        effect.text = currentEffect.name;
 
         currentCard.TitleList[0] = cardData.TitleList[firstNumber];
         currentCard.DiscriptionList[0] = cardData.DiscriptionList[secondNumber];

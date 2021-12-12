@@ -19,7 +19,7 @@ public class CardManager : MonoBehaviour
     {
         ExecuteButton.onClick.AddListener(delegate { Performer.OnEffectStart((CardEffect)Create.currentEffect); Create.OnCreateCard(card); ; });
         CreateButton.onClick.AddListener(delegate { Create.OnCreateCard(card); });
-        SaveButton.onClick.AddListener(delegate { Create.Initialize(); /*SaveSystem.SaveCard(Create.currentCard, (CardEffect)Create.currentEffect);*/ saveManager.OnSave(); });
+        SaveButton.onClick.AddListener(delegate { Create.Initialize(); saveManager.OnSave(); });
     }
 
     
