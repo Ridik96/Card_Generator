@@ -9,13 +9,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b256e26f4e3bb14086f8e7848d19ce2, type: 3}
-  m_Name: Curse Effect
+  m_Script: {fileID: 11500000, guid: d66cdea30107df443a9f0b7fee0b2d0d, type: 3}
+  m_Name: CurrentCard
   m_EditorClassIdentifier: 
-  actionTime: 10
-  actionResult: 1
-  effectDiscription: 
-  nameBar:
-  - ManaBar
-  - HealtBar
-  up: 0
+  TitleList:
+  - 
+  DiscriptionList:
+  - 
+  ImageList:
+  - {fileID: 0}
+  EffectList:
+  - {fileID: 0}
