@@ -12,9 +12,14 @@ public class CreateCard : MonoBehaviour
 
    [SerializeField] private Image potion;
 
-    public ScriptableObject currentEffect;
+    public RawCard currentCard;
+   [HideInInspector] public ScriptableObject currentEffect;
 
-  
+    public void Initialize()
+    {
+        SaveGameManager.card = currentCard;
+    }
+
     public void OnCreateCard(RawCard cardData)
     { 
         int firstNumber;
@@ -32,7 +37,11 @@ public class CreateCard : MonoBehaviour
         discripton.text = cardData.DiscriptionList[secondNumber];
         potion.sprite = cardData.ImageList[thirdNumber];
         currentEffect = cardData.EffectList[effectNumber];
-        
+
+        currentCard.TitleList[0] = cardData.TitleList[firstNumber];
+        currentCard.DiscriptionList[0] = cardData.DiscriptionList[secondNumber];
+        currentCard.ImageList[0] = cardData.ImageList[thirdNumber];
+        currentCard.EffectList[0] = cardData.EffectList[effectNumber];
     }
 
 }

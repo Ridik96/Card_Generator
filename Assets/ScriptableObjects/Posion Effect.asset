@@ -15,8 +15,6 @@ MonoBehaviour:
   actionTime: 5
   actionResult: 0.1
   effectDiscription: 
-  numberOfBar: 1
-  colorBar: {r: 1, g: 0, b: 0, a: 1}
   nameBar:
   - HealtBar
   up: 0

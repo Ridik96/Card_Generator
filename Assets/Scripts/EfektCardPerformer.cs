@@ -26,11 +26,11 @@ public class EfektCardPerformer : MonoBehaviour
     {
         for (int j = 0; j < effect.nameBar.Count; j++)
         {
-            StartCoroutine(HealtBarChange(effect.up, effect.nameBar[j], effect.actionResult, effect.actionTime));
+            StartCoroutine(BarChange(effect.up, effect.nameBar[j], effect.actionResult, effect.actionTime));
         }
         
     }
-    private IEnumerator HealtBarChange(bool grows, string bartag, float actionResult,float time)
+    private IEnumerator BarChange(bool grows, string bartag, float actionResult,float time)
     {
         int curentBar = 0;
        
